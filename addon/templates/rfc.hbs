@@ -1,0 +1,24 @@
+<div class="page">
+  <div class="menu-bar">
+    <div class="left-buttons">
+      <i id="sidebar-toggle" class="fa fa-bars" {{action 'toggleSidebar'}}></i>
+    </div>
+  </div>
+  <div class="content">
+    {{{model.html}}}
+  </div>
+</div>
+
+{{#if previousRFC}}
+  {{#link-to 'rfc' previousRFC class="nav-chapters previous"}}
+    <i class="fa fa-angle-left"></i>
+  {{/link-to}}
+{{else}}
+  {{#link-to 'index' class="nav-chapters previous"}}<i class="fa fa-angle-left"></i>{{/link-to}}
+{{/if}}
+
+{{#if nextRFC}}
+  {{#link-to 'rfc' nextRFC class="nav-chapters next"}}
+    <i class="fa fa-angle-right"></i>
+  {{/link-to}}
+{{/if}}

@@ -1,11 +1,11 @@
 <aside class="sidebar light">
   <ul class="chapter">
     <li>
-      {{#link-to 'index'}} Introduction {{/link-to}}
+      {{#link-to "index"}} Introduction {{/link-to}}
     </li>
     {{#each model.links as |id index|}}
       <li>
-        {{#link-to 'rfc' id}} <strong>{{inc index}}.</strong> {{id}} {{/link-to}}
+        {{#link-to "rfc" id}} <strong>{{inc index}}.</strong> {{id}} {{/link-to}}
       </li>
     {{/each}}
   </ul>

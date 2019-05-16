@@ -23,6 +23,7 @@
   "dependencies": {
     "broccoli-funnel": "^2.0.2",
     "ember-cli-babel": "^7.1.2",
+    "ember-a11y-refocus": "^0.3.0",
     "ember-cli-htmlbars": "^3.0.0"
   },
   "devDependencies": {

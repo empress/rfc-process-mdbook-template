@@ -7,6 +7,31 @@
     </div>
   </div>
   <div class="content">
+    <table>
+      <thead>
+        <tr>
+          <td>start Date</td>
+          <td>release</td>
+          <td>releaseVersions</td>
+          <td>PR link</td>
+          <td>Stage</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{model.start}}</td>
+          <td>{{model.release}}</td>
+          <td>{{releaseVersions}} todo make this less "object"</td>
+          <td><a href={{model.rfc}}>RFC Link</a></td>
+          <td>{{model.stage}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      {{#each model.teams as |team|}}
+        <li>{{team.title}}</li>
+      {{/each}}
+    </ul>
     {{html-safe model.html}}
   </div>
 </div>

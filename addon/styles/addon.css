@@ -1,5 +1,7 @@
 @import "mdbook.css";
 @import "fonts.css";
+@import "variables.css";
+@import "chrome.css";
 
 button.reset {
   border: none;

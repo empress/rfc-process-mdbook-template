@@ -62,7 +62,7 @@
     "loader.js": "^4.7.0",
     "prember": "^1.1.0",
     "qunit-dom": "^1.0.0",
-    "rfc-process": "^0.2.0"
+    "rfc-process": "^0.2.3"
   },
   "engines": {
     "node": "10.* || >= 12"

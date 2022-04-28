@@ -7,6 +7,42 @@
       </button>
     </div>
   </div>
+  <table>
+    <thead>
+      <tr>
+        <td>start Date</td>
+        <td>release date</td>
+        <td>releaseVersions</td>
+        <td>PR link</td>
+        <td>Tracking Link</td>
+        <td>Stage</td>
+        <td>Teams</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{format-date model.startDate}}</td>
+        <td>{{format-date model.releaseDate}}</td>
+        <td>
+          <ul>
+            {{#each-in model.releaseVersions as |key value|}}
+              <li>
+                {{key}}: {{value}}
+              </li>
+            {{/each-in}}
+          </ul>
+        </td>
+        <td><a href={{model.proposalPr}}>RFC Proposal Link</a></td>
+        <td><a href={{model.trackingLink}}>Tracking Link</a></td>
+        <td>{{model.stage.name}}</td>
+        <td><ul>
+          {{#each model.teams as |team|}}
+          <li>{{team.name}}</li>
+          {{/each}}
+        </ul></td>
+      </tr>
+    </tbody>
+  </table>
   <div class="content">
     {{markdown-to-html model.content tagName=""}}
   </div>

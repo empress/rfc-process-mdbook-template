@@ -1,3 +1,21 @@
+---
+start-date: 2022-03-04
+release-date:
+release-versions:
+  ember-source:
+  ember-data:
+  ember-cli:
+  anything-you-want: 5
+teams:
+  - framework
+  - learning
+proposal-pr: https://github.com/emberjs/rfcs/pull/1
+tracking-link: https://github.com/mansona/rfcs/issues/4
+stage: ready-for-release
+---
+
+# Name of the RFC
+
 Some introduction text, this is what we really think about your awesome RFC before we get into the details
 
 ## Overview

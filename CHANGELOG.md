@@ -1,3 +1,7 @@
+v0.2.1 / 2022-04-29
+==================
+* Add frontmatter implementation #7 from @mansona
+
 v0.2.0 / 2022-03-04
 ==================
 * use Lint to the future #6 from @mansona

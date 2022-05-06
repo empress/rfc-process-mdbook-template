@@ -49,15 +49,17 @@
 </div>
 
 {{#if previousRFC}}
-  {{#link-to "rfc" previousRFC class="nav-chapters previous"}}
+  <LinkTo @route="rfc" @model={{previousRFC}} class="nav-chapters previous">
     <FaIcon class="margin-auto" @icon="angle-left" />
-  {{/link-to}}
+  </LinkTo>
 {{else}}
-  {{#link-to "index" class="nav-chapters previous"}}<FaIcon class="margin-auto" @icon="angle-left" />{{/link-to}}
+  <LinkTo @route="index" class="nav-chapters previous">
+    <FaIcon class="margin-auto" @icon="angle-left" />
+  </LinkTo>
 {{/if}}
 
 {{#if nextRFC}}
-  {{#link-to "rfc" nextRFC class="nav-chapters next"}}
+  <LinkTo @route="rfc" @model={{nextRFC}} class="nav-chapters next">
     <FaIcon class="margin-auto" @icon="angle-right" />
-  {{/link-to}}
+  </LinkTo>
 {{/if}}

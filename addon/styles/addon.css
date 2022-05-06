@@ -17,3 +17,15 @@ button.reset {
    -moz-osx-font-smoothing: inherit;
    -webkit-appearance: none;
 }
+
+.margin-auto {
+  margin: auto;
+}
+
+.p1 {
+  padding: .5em;
+}
+
+.p2 {
+  padding: 1em;
+}

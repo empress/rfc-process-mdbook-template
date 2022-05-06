@@ -1,0 +1,12 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    uses: mansona/lint-to-the-future-dashboard-action/.github/workflows/dashboard.yml@main
+    with:
+      folder: ''

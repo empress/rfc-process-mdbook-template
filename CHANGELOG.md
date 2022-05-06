@@ -1,3 +1,8 @@
+v0.3.0 / 2022-05-06
+==================
+* fix link-to calls to use angle brackets and upgrade ember-auto-import #9 from @mansona
+* Update to 3.28 with ember-cli-update #8 from @mansona
+
 v0.2.1 / 2022-04-29
 ==================
 * Add frontmatter implementation #7 from @mansona

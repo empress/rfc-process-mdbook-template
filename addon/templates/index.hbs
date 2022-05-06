@@ -12,6 +12,6 @@
   </div>
 </div>
 
-{{#link-to "rfc" nextRFC class="nav-chapters next"}}
+<LinkTo @route="rfc" @model={{nextRFC}} class="nav-chapters next">
   <FaIcon class="margin-auto" @icon="angle-right" />
-{{/link-to}}
+</LinkTo>

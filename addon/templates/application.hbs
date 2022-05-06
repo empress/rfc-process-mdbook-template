@@ -2,11 +2,11 @@
 <aside class="sidebar light">
   <ul class="chapter">
     <li>
-      {{#link-to "index"}} Introduction {{/link-to}}
+      <LinkTo @route="index">Introduction</LinkTo>
     </li>
     {{#each model.links as |id index|}}
       <li>
-        {{#link-to "rfc" id}} <strong>{{inc index}}.</strong> {{id}} {{/link-to}}
+        <LinkTo @route="rfc" @model={{id}}> <strong>{{inc index}}.</strong> {{id}} </LinkTo>
       </li>
     {{/each}}
   </ul>

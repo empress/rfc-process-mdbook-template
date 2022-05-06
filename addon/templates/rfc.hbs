@@ -3,7 +3,7 @@
   <div class="menu-bar">
     <div class="left-buttons">
       <button class="reset" {{action "toggleSidebar"}}>
-        <i class="fa fa-bars" ></i>
+        <FaIcon class="p2" @icon="bars" />
       </button>
     </div>
   </div>
@@ -50,14 +50,14 @@
 
 {{#if previousRFC}}
   {{#link-to "rfc" previousRFC class="nav-chapters previous"}}
-    <i class="fa fa-angle-left"></i>
+    <FaIcon class="margin-auto" @icon="angle-left" />
   {{/link-to}}
 {{else}}
-  {{#link-to "index" class="nav-chapters previous"}}<i class="fa fa-angle-left"></i>{{/link-to}}
+  {{#link-to "index" class="nav-chapters previous"}}<FaIcon class="margin-auto" @icon="angle-left" />{{/link-to}}
 {{/if}}
 
 {{#if nextRFC}}
   {{#link-to "rfc" nextRFC class="nav-chapters next"}}
-    <i class="fa fa-angle-right"></i>
+    <FaIcon class="margin-auto" @icon="angle-right" />
   {{/link-to}}
 {{/if}}

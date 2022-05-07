@@ -1,8 +1,8 @@
-{{! template-lint-disable no-action no-curly-component-invocation no-implicit-this no-link-to-positional-params require-button-type }}
+{{! template-lint-disable no-action }}
 <div class="page">
   <div class="menu-bar">
     <div class="left-buttons">
-      <button class="reset" {{action "toggleSidebar"}}>
+      <button class="reset" type="button" {{action "toggleSidebar"}}>
         <FaIcon class="p2" @icon="bars" />
       </button>
     </div>
@@ -21,22 +21,22 @@
     </thead>
     <tbody>
       <tr>
-        <td>{{format-date model.startDate}}</td>
-        <td>{{format-date model.releaseDate}}</td>
+        <td>{{format-date @model.startDate}}</td>
+        <td>{{format-date @model.releaseDate}}</td>
         <td>
           <ul>
-            {{#each-in model.releaseVersions as |key value|}}
+            {{#each-in @model.releaseVersions as |key value|}}
               <li>
                 {{key}}: {{value}}
               </li>
             {{/each-in}}
           </ul>
         </td>
-        <td><a href={{model.proposalPr}}>RFC Proposal Link</a></td>
-        <td><a href={{model.trackingLink}}>Tracking Link</a></td>
-        <td>{{model.stage.name}}</td>
+        <td><a href={{@model.proposalPr}}>RFC Proposal Link</a></td>
+        <td><a href={{@model.trackingLink}}>Tracking Link</a></td>
+        <td>{{@model.stage.name}}</td>
         <td><ul>
-          {{#each model.teams as |team|}}
+          {{#each @model.teams as |team|}}
           <li>{{team.name}}</li>
           {{/each}}
         </ul></td>
@@ -44,12 +44,12 @@
     </tbody>
   </table>
   <div class="content">
-    {{markdown-to-html model.content tagName=""}}
+    {{markdown-to-html @model.content tagName=""}}
   </div>
 </div>
 
-{{#if previousRFC}}
-  <LinkTo @route="rfc" @model={{previousRFC}} class="nav-chapters previous">
+{{#if this.previousRFC}}
+  <LinkTo @route="rfc" @model={{this.previousRFC}} class="nav-chapters previous">
     <FaIcon class="margin-auto" @icon="angle-left" />
   </LinkTo>
 {{else}}
@@ -58,8 +58,8 @@
   </LinkTo>
 {{/if}}
 
-{{#if nextRFC}}
-  <LinkTo @route="rfc" @model={{nextRFC}} class="nav-chapters next">
+{{#if this.nextRFC}}
+  <LinkTo @route="rfc" @model={{this.nextRFC}} class="nav-chapters next">
     <FaIcon class="margin-auto" @icon="angle-right" />
   </LinkTo>
 {{/if}}

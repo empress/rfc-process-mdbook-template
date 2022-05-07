@@ -1,17 +1,17 @@
-{{! template-lint-disable no-action no-curly-component-invocation no-implicit-this no-link-to-positional-params require-button-type }}
+{{! template-lint-disable no-action }}
 <div class="page">
   <div class="menu-bar">
     <div class="left-buttons">
-      <button class="reset" {{action "toggleSidebar"}}>
+      <button class="reset" type="button" {{action "toggleSidebar"}}>
         <FaIcon class="p2" @icon="bars" />
       </button>
     </div>
   </div>
   <div class="content">
-    {{html-safe model.html}}
+    {{markdown-to-html @model.content tagName=""}}
   </div>
 </div>
 
-<LinkTo @route="rfc" @model={{nextRFC}} class="nav-chapters next">
+<LinkTo @route="rfc" @model={{this.nextRFC}} class="nav-chapters next">
   <FaIcon class="margin-auto" @icon="angle-right" />
 </LinkTo>

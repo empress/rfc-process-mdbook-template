@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { helper } from '@ember/component/helper';
 
 export default helper(function formatDate(params) {
@@ -8,5 +7,5 @@ export default helper(function formatDate(params) {
     return;
   }
 
-  return new Intl.DateTimeFormat().format(date, { dateStyle: 'full'});
+  return new Intl.DateTimeFormat().format(date, { dateStyle: 'full' });
 });

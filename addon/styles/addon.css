@@ -38,3 +38,7 @@ button.reset {
 ul.chapter {
   margin-top: 0;
 }
+
+.rfc-data-table ul {
+  padding-left: 1em;
+}

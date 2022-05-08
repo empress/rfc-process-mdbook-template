@@ -1,10 +1,9 @@
-{{! template-lint-disable no-curly-component-invocation no-implicit-this no-link-to-positional-params }}
 <aside class="sidebar light">
   <ul class="chapter">
     <li>
       <LinkTo @route="index">Introduction</LinkTo>
     </li>
-    {{#each model.links as |id index|}}
+    {{#each @model.links as |id index|}}
       <li>
         <LinkTo @route="rfc" @model={{id}}> <strong>{{inc index}}.</strong> {{id}} </LinkTo>
       </li>
@@ -13,6 +12,5 @@
 </aside>
 
 <main class="page-wrapper light">
-  {{navigation-narrator}}
   {{outlet}}
 </main>

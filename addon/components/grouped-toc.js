@@ -26,7 +26,9 @@ export default class GroupedTocComponent extends Component {
     result.sort((a, b) => a.stage.order - b.stage.order);
 
     // add links with no stage or an invalid stage after the sorted list
-    result.push(noStage);
+    if (noStage.links.lenght) {
+      result.push(noStage);
+    }
 
     return result;
   }

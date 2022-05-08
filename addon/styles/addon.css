@@ -29,3 +29,12 @@ button.reset {
 .p2 {
   padding: 1em;
 }
+
+.stage-title {
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+ul.chapter {
+  margin-top: 0;
+}

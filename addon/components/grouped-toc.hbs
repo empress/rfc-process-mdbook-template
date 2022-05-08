@@ -1,0 +1,16 @@
+{{#each this.groupedModel as |group|}}
+  <h3 class="stage-title">
+    {{#if group.stage.name}}
+      {{group.stage.name}}
+    {{else}}
+      [No Stage]
+    {{/if}}
+  </h3>
+  <ul class="chapter">
+    {{#each group.links as |id index|}}
+      <li>
+        <LinkTo @route="rfc" @model={{id}}> <strong>{{inc index}}.</strong> {{id}} </LinkTo>
+      </li>
+    {{/each}}
+  </ul>
+{{/each}}

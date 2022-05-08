@@ -3,12 +3,9 @@
     <li>
       <LinkTo @route="index">Introduction</LinkTo>
     </li>
-    {{#each @model.links as |id index|}}
-      <li>
-        <LinkTo @route="rfc" @model={{id}}> <strong>{{inc index}}.</strong> {{id}} </LinkTo>
-      </li>
-    {{/each}}
   </ul>
+
+  <GroupedToc @model={{@model}} />
 </aside>
 
 <main class="page-wrapper light">

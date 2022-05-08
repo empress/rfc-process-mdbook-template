@@ -1,3 +1,9 @@
+v0.4.0 / 2022-05-08
+==================
+* Group the Table of Contents by Stage #12 from @mansona
+* Fix last two lints from Lint to the Future dashboard #11 from @mansona
+* Add a tests that visits all routes #10 from @mansona
+
 v0.3.0 / 2022-05-06
 ==================
 * fix link-to calls to use angle brackets and upgrade ember-auto-import #9 from @mansona

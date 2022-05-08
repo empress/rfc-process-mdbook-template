@@ -6,12 +6,12 @@
       </button>
     </div>
   </div>
-  <table>
+  <table class="rfc-data-table">
     <thead>
       <tr>
-        <td>start Date</td>
-        <td>release date</td>
-        <td>releaseVersions</td>
+        <td>Start Date</td>
+        <td>Release Date</td>
+        <td>Release Versions</td>
         <td>PR link</td>
         <td>Tracking Link</td>
         <td>Stage</td>
@@ -31,8 +31,16 @@
             {{/each-in}}
           </ul>
         </td>
-        <td><a href={{@model.proposalPr}}>RFC Proposal Link</a></td>
-        <td><a href={{@model.trackingLink}}>Tracking Link</a></td>
+        <td>
+          {{#if @model.proposalPr}}
+            <a href={{@model.proposalPr}}>RFC Proposal Link</a>
+          {{/if}}
+        </td>
+        <td>
+          {{#if @model.trackingLink}}
+            <a href={{@model.trackingLink}}>Tracking Link</a>
+          {{/if}}
+        </td>
         <td>{{@model.stage.name}}</td>
         <td><ul>
           {{#each @model.teams as |team|}}

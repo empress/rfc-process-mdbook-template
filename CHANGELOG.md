@@ -1,3 +1,7 @@
+v0.4.1 / 2022-05-08
+==================
+* UI tweaks #13 from @mansona
+
 v0.4.0 / 2022-05-08
 ==================
 * Group the Table of Contents by Stage #12 from @mansona

@@ -78,7 +78,7 @@
     "prettier": "^2.5.1",
     "qunit": "^2.17.2",
     "qunit-dom": "^1.6.0",
-    "rfc-process": "^0.4.0",
+    "rfc-process": "^0.4.1",
     "webpack": "^5.65.0"
   },
   "engines": {

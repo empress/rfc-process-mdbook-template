@@ -7,9 +7,9 @@
     {{/if}}
   </h3>
   <ul class="chapter">
-    {{#each group.links as |id index|}}
+    {{#each group.links as |id|}}
       <li>
-        <LinkTo @route="rfc" @model={{id}}> <strong>{{inc index}}.</strong> {{id}} </LinkTo>
+        <LinkTo @route="rfc" @model={{id}}> {{id}} </LinkTo>
       </li>
     {{/each}}
   </ul>

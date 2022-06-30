@@ -1,3 +1,10 @@
+v1.0.0 / 2022-06-30
+==================
+
+This is not a major update, this is just indicating that it is stable enough to use proper semver
+
+* remove index number from table of contents #14 from @mansona
+
 v0.4.1 / 2022-05-08
 ==================
 * UI tweaks #13 from @mansona

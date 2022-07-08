@@ -1,13 +1,31 @@
-<aside class="sidebar light">
-  <ul class="chapter">
-    <li>
-      <LinkTo @route="index">Introduction</LinkTo>
-    </li>
-  </ul>
+<MobileMenuWrapper as |mmw|>
+  <mmw.MobileMenu as |mm|>
+    <ul class="chapter">
+        <li>
+          <mm.LinkTo @route="index">Introduction</mm.LinkTo>
+        </li>
+      </ul>
+    <GroupedToc @model={{@model}} as |id|>
+      <mm.LinkTo @route="rfc" @model={{id}}> {{id}} </mm.LinkTo>
+    </GroupedToc>
+  </mmw.MobileMenu>
 
-  <GroupedToc @model={{@model}} />
-</aside>
+  <mmw.Content>
+    <mmw.Toggle class="reset"><FaIcon class="p2" @icon="bars" /></mmw.Toggle>
+    <aside class="sidebar light">
+      <ul class="chapter">
+        <li>
+          <LinkTo @route="index">Introduction</LinkTo>
+        </li>
+      </ul>
 
-<main class="page-wrapper light">
-  {{outlet}}
-</main>
+      <GroupedToc @model={{@model}} as |id|>
+        <LinkTo @route="rfc" @model={{id}}> {{id}} </LinkTo>
+      </GroupedToc>
+    </aside>
+    <main class="page-wrapper light">
+      {{outlet}}
+    </main>
+  </mmw.Content>
+</MobileMenuWrapper>
+

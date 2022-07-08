@@ -1,11 +1,4 @@
 <div class="page">
-  <div class="menu-bar">
-    <div class="left-buttons">
-      <button class="reset" type="button" {{on "click" this.toggleSidebar}}>
-        <FaIcon class="p2" @icon="bars" />
-      </button>
-    </div>
-  </div>
   <div class="content">
     {{markdown-to-html @model.content tagName=""}}
   </div>

@@ -9,7 +9,7 @@
   <ul class="chapter">
     {{#each group.links as |id|}}
       <li>
-        <LinkTo @route="rfc" @model={{id}}> {{id}} </LinkTo>
+        {{yield id}}
       </li>
     {{/each}}
   </ul>

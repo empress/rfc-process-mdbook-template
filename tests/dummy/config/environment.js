@@ -21,6 +21,11 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+
+    rfcs: {
+      title: 'rfc-process',
+      description: 'RFC Workflow App - Built with Ember',
+    },
   };
 
   if (environment === 'development') {

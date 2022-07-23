@@ -82,7 +82,7 @@
     "webpack": "^5.65.0"
   },
   "peerDependencies": {
-    "rfc-process": "> 1.0.0"
+    "rfc-process": ">= 1.0.0"
   },
   "engines": {
     "node": "14.* || >= 16"

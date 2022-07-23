@@ -1,3 +1,7 @@
+v1.1.0 / 2022-07-23
+==================
+* Supporting rfc-process v1.0 and adding head-data #16 from @mansona
+
 v1.0.0 / 2022-06-30
 ==================
 

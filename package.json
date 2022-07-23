@@ -24,7 +24,7 @@
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test",
-    "test:ember-compatibility": "ember try:each"
+    "ember-compatibility-tests": "ember try:each"
   },
   "dependencies": {
     "@fortawesome/ember-fontawesome": "https://git@github.com/mansona/ember-fontawesome.git#update-get-config",

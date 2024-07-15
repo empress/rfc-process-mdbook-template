@@ -30,6 +30,7 @@
     "@fortawesome/ember-fontawesome": "github:mansona/ember-fontawesome.git#ember-3-28",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "broccoli-funnel": "^2.0.2",
+    "ember-auto-import": "^2.0.0",
     "ember-cli-babel": "^7.26.10",
     "ember-cli-htmlbars": "^5.7.2",
     "ember-showdown-shiki": "^1.2.1"
@@ -44,7 +45,6 @@
     "auto-changelog": "github:mansona/auto-changelog.git#epic",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
-    "ember-auto-import": "^2.0.0",
     "ember-cli": "~3.28.5",
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-fastboot": "^4.1.5",

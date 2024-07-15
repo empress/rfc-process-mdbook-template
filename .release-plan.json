@@ -1,0 +1,25 @@
+{
+  "solution": {
+    "rfc-process-mdbook-template": {
+      "impact": "major",
+      "oldVersion": "1.1.1",
+      "newVersion": "2.0.0",
+      "constraints": [
+        {
+          "impact": "major",
+          "reason": "Appears in changelog section :boom: Breaking Change"
+        },
+        {
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./package.json"
+    }
+  },
+  "description": "## Release (2024-07-15)\n\nrfc-process-mdbook-template 2.0.0 (major)\n\n#### :boom: Breaking Change\n* `rfc-process-mdbook-template`\n  * [#19](https://github.com/empress/rfc-process-mdbook-template/pull/19) update font awesome and switch to pnpm ([@mansona](https://github.com/mansona))\n\n#### :rocket: Enhancement\n* `rfc-process-mdbook-template`\n  * [#18](https://github.com/empress/rfc-process-mdbook-template/pull/18) feat: migrate to `ember-showdown-shiki` ([@IgnaceMaes](https://github.com/IgnaceMaes))\n\n#### :house: Internal\n* `rfc-process-mdbook-template`\n  * [#22](https://github.com/empress/rfc-process-mdbook-template/pull/22) use pnpm/action-setup@v4 everywhere ([@mansona](https://github.com/mansona))\n  * [#21](https://github.com/empress/rfc-process-mdbook-template/pull/21) fix Lint to the Future dashboard ([@mansona](https://github.com/mansona))\n  * [#20](https://github.com/empress/rfc-process-mdbook-template/pull/20) start using release-plan ([@mansona](https://github.com/mansona))\n\n#### Committers: 2\n- Chris Manson ([@mansona](https://github.com/mansona))\n- Ignace Maes ([@IgnaceMaes](https://github.com/IgnaceMaes))\n"
+}

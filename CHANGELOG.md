@@ -1,5 +1,27 @@
 # Changelog
 
+## Release (2024-07-15)
+
+rfc-process-mdbook-template 2.0.0 (major)
+
+#### :boom: Breaking Change
+* `rfc-process-mdbook-template`
+  * [#19](https://github.com/empress/rfc-process-mdbook-template/pull/19) update font awesome and switch to pnpm ([@mansona](https://github.com/mansona))
+
+#### :rocket: Enhancement
+* `rfc-process-mdbook-template`
+  * [#18](https://github.com/empress/rfc-process-mdbook-template/pull/18) feat: migrate to `ember-showdown-shiki` ([@IgnaceMaes](https://github.com/IgnaceMaes))
+
+#### :house: Internal
+* `rfc-process-mdbook-template`
+  * [#22](https://github.com/empress/rfc-process-mdbook-template/pull/22) use pnpm/action-setup@v4 everywhere ([@mansona](https://github.com/mansona))
+  * [#21](https://github.com/empress/rfc-process-mdbook-template/pull/21) fix Lint to the Future dashboard ([@mansona](https://github.com/mansona))
+  * [#20](https://github.com/empress/rfc-process-mdbook-template/pull/20) start using release-plan ([@mansona](https://github.com/mansona))
+
+#### Committers: 2
+- Chris Manson ([@mansona](https://github.com/mansona))
+- Ignace Maes ([@IgnaceMaes](https://github.com/IgnaceMaes))
+
 v1.1.0 / 2022-07-23
 ==================
 * Supporting rfc-process v1.0 and adding head-data #16 from @mansona

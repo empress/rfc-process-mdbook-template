@@ -29,6 +29,9 @@ importers:
       ember-showdown-shiki:
         specifier: ^1.2.1
         version: 1.2.1(@babel/core@7.24.9)(showdown@1.9.1)
+      showdown:
+        specifier: '>1.0.0'
+        version: 1.9.1
     devDependencies:
       '@ember/optional-features':
         specifier: ^2.0.0

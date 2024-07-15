@@ -27,7 +27,7 @@
     "ember-compatibility-tests": "ember try:each"
   },
   "dependencies": {
-    "@fortawesome/ember-fontawesome": "https://git@github.com/mansona/ember-fontawesome.git#update-get-config",
+    "@fortawesome/ember-fontawesome": "github:mansona/ember-fontawesome.git#ember-3-28",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "broccoli-funnel": "^2.0.2",
     "ember-cli-babel": "^7.26.10",
@@ -37,16 +37,17 @@
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
-    "@embroider/test-setup": "^1.6.0",
+    "@embroider/test-setup": "^4.0.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
-    "auto-changelog": "https://git@github.com/mansona/auto-changelog.git#epic",
+    "auto-changelog": "github:mansona/auto-changelog.git#epic",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^2.0.0",
     "ember-cli": "~3.28.5",
     "ember-cli-dependency-checker": "^3.2.0",
-    "ember-cli-fastboot": "^3.3.2",
+    "ember-cli-fastboot": "^4.1.5",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
@@ -62,7 +63,7 @@
     "ember-source": "~3.28.8",
     "ember-source-channel-url": "^3.0.0",
     "ember-template-lint": "^3.15.0",
-    "ember-try": "^1.4.0",
+    "ember-try": "^3.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-ember": "^10.5.8",
@@ -74,7 +75,7 @@
     "lint-to-the-future-eslint": "^0.3.1",
     "loader.js": "^4.7.0",
     "npm-run-all": "^4.1.5",
-    "prember": "^1.1.0",
+    "prember": "^2.1.0",
     "prettier": "^2.5.1",
     "qunit": "^2.17.2",
     "qunit-dom": "^1.6.0",
@@ -85,8 +86,9 @@
     "rfc-process": ">= 1.0.0"
   },
   "engines": {
-    "node": "14.* || >= 16"
+    "node": "18.* || 20.* || >= 20"
   },
+  "packageManager": "pnpm@9.5.0",
   "ember": {
     "edition": "octane"
   },

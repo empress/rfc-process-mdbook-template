@@ -36,6 +36,16 @@ oh did I say JS, I meant HBS:
 <SomeComponent @foo={{2}} />
 ```
 
+but let's be honest, we all want to see GJS/GTS:
+
+```gjs
+const Hello = <template>Hello, {{@name}}</template>;
+
+<template>
+  <Hello @name="world" /> 👋
+</template>
+```
+
 
 or what does it look like with no language defined at all?
 

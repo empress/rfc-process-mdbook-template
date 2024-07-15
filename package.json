@@ -14,7 +14,6 @@
   },
   "scripts": {
     "build": "ember build --environment=production",
-    "changelog": "auto-changelog --template changelog.template --unreleased-only --prepend --load-github-issue-data --github-cache-dir .changelog",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
     "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
     "lint:hbs": "ember-template-lint .",
@@ -42,7 +41,6 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
-    "auto-changelog": "github:mansona/auto-changelog.git#epic",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-cli": "~3.28.5",
@@ -80,6 +78,7 @@
     "prettier": "^2.5.1",
     "qunit": "^2.17.2",
     "qunit-dom": "^1.6.0",
+    "release-plan": "^0.9.0",
     "rfc-process": "^1.0.0",
     "webpack": "^5.65.0"
   },
@@ -87,10 +86,10 @@
     "rfc-process": ">= 1.0.0",
     "showdown": ">1.0.0"
   },
+  "packageManager": "pnpm@9.5.0",
   "engines": {
     "node": "18.* || 20.* || >= 20"
   },
-  "packageManager": "pnpm@9.5.0",
   "ember": {
     "edition": "octane"
   },

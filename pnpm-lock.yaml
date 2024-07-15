@@ -69,6 +69,9 @@ importers:
       ember-cli-inject-live-reload:
         specifier: ^2.1.0
         version: 2.1.0
+      ember-cli-showdown:
+        specifier: ^7.0.0
+        version: 7.0.0(ember-source@3.28.12(@babel/core@7.24.9))(webpack@5.93.0)
       ember-cli-sri:
         specifier: ^2.1.1
         version: 2.1.1
@@ -3101,6 +3104,12 @@ packages:
 
   ember-cli-preprocess-registry@3.3.0:
     resolution: {integrity: sha512-60GYpw7VPeB7TvzTLZTuLTlHdOXvayxjAQ+IxM2T04Xkfyu75O2ItbWlftQW7NZVGkaCsXSRAmn22PG03VpLMA==}
+
+  ember-cli-showdown@7.0.0:
+    resolution: {integrity: sha512-xpmqv+pSK1hMG50CD8DqClS0uEyTGF+jE1c/32otiZTslDMcISQC1xysdtdx2RHC+Uu0EpiS+WGp0oDznrH+WA==}
+    engines: {node: 14.* || 16.* || >= 18}
+    peerDependencies:
+      ember-source: ^3.12.0 || >4.0.0
 
   ember-cli-sri@2.1.1:
     resolution: {integrity: sha512-YG/lojDxkur9Bnskt7xB6gUOtJ6aPl/+JyGYm9HNDk3GECVHB3SMN3rlGhDKHa1ndS5NK2W2TSLb9bzRbGlMdg==}
@@ -11269,6 +11278,18 @@ snapshots:
       process-relative-require: 1.0.0
     transitivePeerDependencies:
       - supports-color
+
+  ember-cli-showdown@7.0.0(ember-source@3.28.12(@babel/core@7.24.9))(webpack@5.93.0):
+    dependencies:
+      ember-auto-import: 2.7.4(webpack@5.93.0)
+      ember-cli-babel: 7.26.11
+      ember-cli-htmlbars: 6.3.0
+      ember-source: 3.28.12(@babel/core@7.24.9)
+      showdown: 1.9.1
+    transitivePeerDependencies:
+      - '@glint/template'
+      - supports-color
+      - webpack
 
   ember-cli-sri@2.1.1:
     dependencies:

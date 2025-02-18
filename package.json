@@ -26,7 +26,7 @@
     "ember-compatibility-tests": "ember try:each"
   },
   "dependencies": {
-    "@fortawesome/ember-fontawesome": "github:mansona/ember-fontawesome.git#ember-3-28",
+    "@fortawesome/ember-fontawesome": "^3.0.0",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "broccoli-funnel": "^2.0.2",
     "ember-auto-import": "^2.0.0",

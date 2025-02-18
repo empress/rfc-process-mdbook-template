@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-02-18)
+
+rfc-process-mdbook-template 2.0.1 (patch)
+
+#### :house: Internal
+* `rfc-process-mdbook-template`
+  * [#24](https://github.com/empress/rfc-process-mdbook-template/pull/24) update pnpm ([@mansona](https://github.com/mansona))
+
+#### Committers: 1
+- Chris Manson ([@mansona](https://github.com/mansona))
+
 ## Release (2024-07-15)
 
 rfc-process-mdbook-template 2.0.0 (major)
